@@ -40,7 +40,7 @@
 }
 
 .MoreInfoImage {
-  max-height: 600px;
+  height: 350px;
 }
 
 .MoreInfo {
@@ -64,5 +64,15 @@
 
   .Wrapper {
     margin-top: 80px;
+  }
+
+  .MoreInfoImage {
+    height: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .MoreInfoImage {
+    height: 600px;
   }
 }

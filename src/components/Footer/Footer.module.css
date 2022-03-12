@@ -22,11 +22,11 @@
 }
 
 .ShopName h1 {
-  font-size: 5em;
+  font-size: 4.5em;
   margin: 0;
 }
 .ShopName h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   margin: 0;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .ShopName h4 {
-  font-size: 1em;
+  font-size: 0.8em;
   margin: 8px 0;
 }
 
@@ -97,5 +97,20 @@
   .gmap_canvas {
     height: 500px;
     width: 600px;
+  }
+
+  .ShopName h1 {
+    font-size: 5em;
+  }
+  .ShopName h2 {
+    font-size: 3em;
+  }
+
+  .ShopName h3 {
+    font-size: 2em;
+  }
+
+  .ShopName h4 {
+    font-size: 1em;
   }
 }

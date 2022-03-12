@@ -37,6 +37,28 @@ function App() {
     }
   }
 
+  const artImgs = importAll(
+    require.context("./assets/arts", false, /\.(png|jpe?g|svg)$/)
+  );
+
+  const arts = [];
+
+  for (let i = 1; i <= Object.keys(artImgs).length; i++) {
+    if (artImgs[`art${i}.jpg`]) {
+      arts.push({
+        src: artImgs[`art${i}.jpg`],
+        thumbnail: artImgs[`art${i}.jpg`],
+        thumbnailWidth: 320,
+        thumbnailHeight: 212,
+        // tags: [
+        //   { value: "Ocean", title: "Ocean" },
+        //   { value: "People", title: "People" },
+        // ],
+        // caption: "Boats (Jeshu John - designerspics.com)",
+      });
+    }
+  }
+
   return (
     <BrowserRouter>
       <Nav />
@@ -44,11 +66,13 @@ function App() {
         <Route path="/" exact render={(props) => <Bio />}></Route>
         <Route
           path="/TattooPortfolio"
-          render={(props) => <TattooPortfolio imgs={images} />}
+          render={(props) => (
+            <TattooPortfolio imgs={images} title={"Tattoos"} />
+          )}
         ></Route>
         <Route
           path="/Arts"
-          render={(props) => <TattooPortfolio imgs={images} />}
+          render={(props) => <TattooPortfolio imgs={arts} title={"Artworks"} />}
         ></Route>
         <Route path="/Booking" exact render={(props) => <Booking />}></Route>
       </Switch>

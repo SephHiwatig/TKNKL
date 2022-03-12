@@ -3,11 +3,20 @@ import styles from "./TattooPortfolio.module.css";
 import Gallery from "react-grid-gallery";
 
 function TattooPortfolio(props) {
-  console.log(props.imgs);
   return (
     <div className={styles.Wrapper}>
-      <div className={styles.GalleryWrapper}>
-        <Gallery images={props.imgs} />
+      <div
+        style={{
+          display: "block",
+          minHeight: "1px",
+          width: "100%",
+          overflow: "hidden",
+          textAlign: "center",
+          background: "white",
+        }}
+      >
+        <h1>{props.title}</h1>
+        <Gallery images={props.imgs} enableImageSelection={false} />
       </div>
     </div>
   );
