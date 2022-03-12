@@ -1,0 +1,14 @@
+.Wrapper {
+  margin-top: 250px;
+  padding: 0 10%;
+  min-height: calc(100vh - 250px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .Wrapper {
+    margin-top: 80px;
+  }
+}

@@ -1,0 +1,101 @@
+.Wrapper {
+  height: 100vh;
+  /* background-image: url("./../../assets/background.jpeg"); */
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ShopName {
+  color: #fff;
+  text-align: center;
+  padding-right: 3%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 240px;
+}
+
+.ShopName h1 {
+  font-size: 5em;
+  margin: 0;
+}
+.ShopName h2 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.ShopName h3 {
+  font-size: 1em;
+  margin: 0;
+}
+
+.ShopName h4 {
+  font-size: 1em;
+  margin: 8px 0;
+}
+
+.SocialIcons {
+  font-size: 2em;
+  margin: 16px;
+  color: #fff;
+}
+
+.MapWrapper {
+  padding-left: 3%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 300px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 250px;
+  width: 300px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 250px;
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  .Wrapper {
+    flex-direction: row;
+  }
+
+  .MapWrapper {
+    border-left: 4px solid #fff;
+    border-top: none;
+    height: 500px;
+    width: 600px;
+  }
+
+  .ShopName {
+    border-right: 4px solid #fff;
+    border-bottom: none;
+    height: 500px;
+    width: 600px;
+  }
+
+  .mapouter {
+    height: 500px;
+    width: 600px;
+  }
+
+  .gmap_canvas {
+    height: 500px;
+    width: 600px;
+  }
+}

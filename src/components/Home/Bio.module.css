@@ -1,0 +1,68 @@
+.Wrapper {
+  margin-top: 250px;
+  padding: 0 10%;
+  min-height: calc(100vh - 250px);
+  text-align: center;
+}
+
+.Title {
+  margin-top: 100px;
+}
+
+.BioInfoWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.BioInfo {
+  flex: 1;
+  max-width: 500px;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.Bar {
+  height: 8px;
+  background: #d63239;
+  margin: 25px 0;
+  border: none;
+}
+
+.MoreInfoWrapper {
+  display: flex;
+  padding: 0 3%;
+  flex-direction: column;
+}
+
+.MoreInfoImageWrapper {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.MoreInfoImage {
+  max-height: 600px;
+}
+
+.MoreInfo {
+  flex: 1;
+  margin-left: 8px;
+  text-align: justify;
+}
+
+.InfoTitle {
+  margin-top: 0;
+}
+
+.Info {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .MoreInfoWrapper {
+    flex-direction: row;
+  }
+
+  .Wrapper {
+    margin-top: 80px;
+  }
+}
