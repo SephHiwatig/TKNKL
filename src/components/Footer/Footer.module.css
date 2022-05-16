@@ -70,7 +70,19 @@
   width: 300px;
 }
 
+.Shop {
+  max-height: 400px;
+}
+
+.Title {
+  max-width: 400px;
+}
+
 @media (min-width: 768px) {
+  .Title {
+    max-width: 500px;
+  }
+
   .Wrapper {
     flex-direction: row;
   }

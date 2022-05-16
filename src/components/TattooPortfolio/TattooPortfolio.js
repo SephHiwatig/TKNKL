@@ -15,7 +15,6 @@ function TattooPortfolio(props) {
           background: "white",
         }}
       >
-        <h1>{props.title}</h1>
         <Gallery images={props.imgs} enableImageSelection={false} />
       </div>
     </div>

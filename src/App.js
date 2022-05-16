@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Booking from "./components/Booking/Booking";
+import Home from "./components/Home/Home";
 
 function importAll(r) {
   let images = {};
@@ -63,7 +64,7 @@ function App() {
     <BrowserRouter>
       <Nav />
       <Switch>
-        <Route path="/" exact render={(props) => <Bio />}></Route>
+        <Route path="/" exact render={(props) => <Home />}></Route>
         <Route
           path="/TattooPortfolio"
           render={(props) => (

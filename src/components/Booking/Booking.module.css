@@ -2,13 +2,115 @@
   margin-top: 250px;
   padding: 0 10%;
   min-height: calc(100vh - 250px);
+  text-align: center;
+}
+
+.Title {
+  margin-top: 100px;
+}
+
+.BioInfoWrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
+.BioInfo {
+  flex: 1;
+  max-width: 500px;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.Bar {
+  height: 8px;
+  background: #d63239;
+  margin: 25px 0;
+  border: none;
+}
+
+.MoreInfoWrapper {
+  display: flex;
+  padding: 0 3%;
+  flex-direction: column;
+}
+
+.MoreInfoImageWrapper {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.MoreInfoImage {
+  height: 350px;
+}
+
+.MoreInfo {
+  flex: 1;
+  margin-left: 8px;
+  text-align: justify;
+}
+
+.InfoTitle {
+  margin-top: 0;
+}
+
+.Info {
+  font-weight: 300;
+}
+
+.BookNowWrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.BtnBookNow {
+  max-width: 300px;
+  flex: 1;
+  font-family: "Bebas Neue", cursive;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 4px;
+  border: 2px solid black;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 0;
+}
+
+.BtnBookNow:hover {
+  background: lightgray;
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
+}
+
+.BtnBookNow:active {
+  transform: scale(0.9);
+}
+
+.BtnBookNow {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (min-width: 768px) {
+  .MoreInfoWrapper {
+    flex-direction: row;
+  }
+
   .Wrapper {
     margin-top: 80px;
+  }
+
+  .MoreInfoImage {
+    height: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .MoreInfoImage {
+    height: 600px;
   }
 }
