@@ -71,11 +71,11 @@
 }
 
 .Shop {
-  max-height: 400px;
+  max-height: 300px;
 }
 
 .Title {
-  max-width: 400px;
+  max-width: 300px;
 }
 
 @media (min-width: 768px) {
