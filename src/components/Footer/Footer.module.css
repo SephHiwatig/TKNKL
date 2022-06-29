@@ -1,7 +1,7 @@
 .WrapperHome {
   margin-top: 250px;
   height: 100vh;
-  /* background-image: url("./../../assets/background.jpeg"); */
+  background-image: url("./../../assets/background.jpeg");
   background-color: black;
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@
 
 .Wrapper {
   height: 100vh;
-  /* background-image: url("./../../assets/background.jpeg"); */
+  background-image: url("./../../assets/background.jpeg");
   background-color: black;
   display: flex;
   align-items: center;
@@ -87,6 +87,11 @@
 
 .Title {
   max-width: 300px;
+}
+
+.TknklLink {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (min-width: 768px) {
