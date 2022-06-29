@@ -1,3 +1,14 @@
+.WrapperHome {
+  margin-top: 250px;
+  height: 100vh;
+  /* background-image: url("./../../assets/background.jpeg"); */
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .Wrapper {
   height: 100vh;
   /* background-image: url("./../../assets/background.jpeg"); */
@@ -83,46 +94,12 @@
     max-width: 500px;
   }
 
-  .Wrapper {
+  .WrapperHome {
+    margin-top: 80px;
     flex-direction: row;
   }
 
-  .MapWrapper {
-    border-left: 4px solid #fff;
-    border-top: none;
-    height: 500px;
-    width: 600px;
-  }
-
-  .ShopName {
-    border-right: 4px solid #fff;
-    border-bottom: none;
-    height: 500px;
-    width: 600px;
-  }
-
-  .mapouter {
-    height: 500px;
-    width: 600px;
-  }
-
-  .gmap_canvas {
-    height: 500px;
-    width: 600px;
-  }
-
-  .ShopName h1 {
-    font-size: 5em;
-  }
-  .ShopName h2 {
-    font-size: 3em;
-  }
-
-  .ShopName h3 {
-    font-size: 2em;
-  }
-
-  .ShopName h4 {
-    font-size: 1em;
+  .Wrapper {
+    flex-direction: row;
   }
 }

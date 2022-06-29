@@ -4,7 +4,7 @@ import { BsFacebook, BsInstagram } from "react-icons/bs";
 import shopTemplate from "./../../assets/shop_template.jpg";
 import tknkl from "./../../assets/tknkl_white.jpg";
 
-function Footer() {
+function Footer(props) {
   const [width, setWidth] = useState(600);
   const [height, setHeight] = useState(500);
 
@@ -22,7 +22,7 @@ function Footer() {
   });
 
   return (
-    <div className={styles.Wrapper}>
+    <div className={props.home ? styles.WrapperHome : styles.Wrapper}>
       <div className={styles.ShopName}>
         <h1>
           <img className={styles.Shop} src={shopTemplate} alt="logo" />

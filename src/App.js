@@ -64,7 +64,7 @@ function App() {
     <BrowserRouter>
       <Nav />
       <Switch>
-        <Route path="/" exact render={(props) => <Home />}></Route>
+        <Route path="/" exact render={(props) => <Footer home={true}/>}></Route>
         <Route
           path="/TattooPortfolio"
           render={(props) => (
@@ -77,7 +77,6 @@ function App() {
         ></Route>
         <Route path="/Booking" exact render={(props) => <Booking />}></Route>
       </Switch>
-      <Footer />
     </BrowserRouter>
   );
 }
