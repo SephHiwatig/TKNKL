@@ -83,6 +83,34 @@
   transform: scale(0.9);
 }
 
+.BurgerDropdown {
+  list-style: none;
+  border: 1px solid gray;
+  border-radius: 4px;
+  position: fixed;
+  top: 45px;
+  right: 5px;
+  width: 250px;
+  background: #fff;
+  padding: 0;
+}
+
+.BurgerDropdownItem {
+  font-family: "Bebas Neue", cursive;
+  font-size: x-large;
+  padding: 4px;
+  padding-right: 0 !important;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 0;
+  min-width: 150px;
+  color: inherit;
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .ListItemWrapper {
     flex-direction: row;

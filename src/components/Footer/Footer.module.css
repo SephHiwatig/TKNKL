@@ -1,7 +1,8 @@
 .WrapperHome {
   margin-top: 70px;
   height: 100vh;
-  background-image: url("./../../assets/background.jpeg");
+  background-image: url("./../../assets/shop-background.jpg");
+  background-size: cover;
   background-color: black;
   display: flex;
   align-items: center;
@@ -12,7 +13,8 @@
 
 .Wrapper {
   height: 100vh;
-  background-image: url("./../../assets/background.jpeg");
+  background-image: url("./../../assets/shop-background.jpg");
+  background-size: cover;
   background-color: black;
   display: flex;
   align-items: center;

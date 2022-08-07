@@ -1,5 +1,5 @@
 .Wrapper {
-  margin-top: 180px;
+  margin-top: 70px;
   margin-bottom: 50px;
   padding: 0 10%;
   min-height: calc(100vh - 250px);
@@ -12,7 +12,4 @@
 }
 
 @media (min-width: 768px) {
-  .Wrapper {
-    margin-top: 70px;
-  }
 }
