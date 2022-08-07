@@ -1,16 +1,15 @@
 .Navbar {
-  background: transparent;
+  background: white;
   display: flex;
   position: fixed;
-  width: 80%;
   top: 0px;
   left: 0px;
   right: 0px;
   z-index: 1;
-  background: #fff;
-  padding: 0 10%;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-width: 100%;
 }
 
 .LogoWrapper {
@@ -20,33 +19,27 @@
   margin-top: 4px;
 }
 
-.Logo {
-  max-height: 50px;
-  display: block;
-  align-self: center;
-}
-
 .ListItemWrapper {
   list-style: none;
-  display: flex;
+  display: none;
   flex-direction: column;
-  justify-items: center;
+  justify-content: center;
   flex: 1;
   padding: 0;
 }
 
 .ListItem {
-  flex: 1;
   font-family: "Bebas Neue", cursive;
   font-size: x-large;
   padding: 4px;
-  border: 2px solid black;
+  padding-right: 0 !important;
   text-align: center;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 4px 0;
+  min-width: 150px;
 }
 
 .ListItem:hover {
@@ -64,20 +57,48 @@
   color: inherit;
 }
 
+/* Burger nav styles */
+.BurgerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.BtnBurger {
+  padding: 12px 12px 8px 12px;
+  margin: 4px;
+  font-size: x-large;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.BtnBurger:hover {
+  background: #aaa;
+}
+
+.BtnBurger:active {
+  transform: scale(0.9);
+}
+
 @media (min-width: 768px) {
   .ListItemWrapper {
     flex-direction: row;
+    display: flex;
   }
 
   .ListItem {
     margin: 0 16px;
+    flex: none;
   }
 
   .Navbar {
     flex-direction: row;
   }
 
-  .LogoWrapper {
-    margin-top: 0px;
+  .BurgerWrapper {
+    display: none;
   }
 }

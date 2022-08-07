@@ -1,5 +1,5 @@
 .WrapperHome {
-  margin-top: 250px;
+  margin-top: 70px;
   height: 100vh;
   background-image: url("./../../assets/background.jpeg");
   background-color: black;
@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  max-width: 100%;
 }
 
 .Wrapper {
@@ -33,7 +34,7 @@
 }
 
 .ShopName h1 {
-  font-size: 4.5em;
+  font-size: 2.5em;
   margin: 0;
 }
 .ShopName h2 {
@@ -92,6 +93,7 @@
 .TknklLink {
   text-decoration: none;
   color: inherit;
+  font-size: inherit;
 }
 
 @media (min-width: 768px) {
@@ -99,12 +101,11 @@
     max-width: 500px;
   }
 
-  .WrapperHome {
-    margin-top: 80px;
+  .Wrapper {
     flex-direction: row;
   }
 
-  .Wrapper {
-    flex-direction: row;
+  .ShopName h1 {
+    font-size: 4em;
   }
 }

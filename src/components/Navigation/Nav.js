@@ -1,9 +1,10 @@
 import { React } from "react";
 import styles from "./Nav.module.css";
-import logo from "./../../assets/tknkl.jpg";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function Nav() {
+
   return (
     <div className={styles.Navbar}>
       <ul className={styles.ListItemWrapper}>
@@ -20,6 +21,11 @@ function Nav() {
           <li>Booking</li>
         </Link>
       </ul>
+      <div className={styles.BurgerWrapper}>
+        <button className={styles.BtnBurger}>
+          <GiHamburgerMenu />
+        </button>
+      </div>
     </div>
   );
 }

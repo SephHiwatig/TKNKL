@@ -1,32 +1,31 @@
 .Wrapper {
-    margin-top: 200px;
-    padding: 0 10%;
-    min-height: calc(100vh - 250px);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  margin-top: 70px;
+  padding: 0 10%;
+  min-height: calc(100vh - 250px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.Wrapper div img, .Wrapper h1 img {
-    max-width: 300px;
+.Wrapper div img,
+.Wrapper h1 img {
+  max-width: 300px;
 }
 
 .Logo {
-    max-height: 500px;
+  max-height: 500px;
 }
 
 @media (min-width: 768px) {
-    .Wrapper {
-      margin-top: 100px;
-    }
-
-    .Wrapper div img, .Wrapper h1 img {
-        max-width: 500px;
-    }
+  .Wrapper div img,
+  .Wrapper h1 img {
+    max-width: 500px;
+  }
 }
-  
+
 @media (min-width: 1200px) {
-    .Wrapper div img, .Wrapper h1 img {
-        max-width: 600px;
-    }
+  .Wrapper div img,
+  .Wrapper h1 img {
+    max-width: 600px;
+  }
 }
